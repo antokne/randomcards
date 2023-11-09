@@ -15,7 +15,7 @@ I have decided to architect this in a way that might be considered for a larger 
 Each layer is it's own package and could be further seperated into separate repositories if desired. For the purposes of this demo all packages are included in the one repo.
 
 Packages are:
-1. the API layer - calls the random cards api and includes it's unit tests,
+1. The API layer - calls the random cards api and includes it's unit tests,
 2. Local Model layer - for storing saved cards, could easily be sync'd with cloud and only be a local offline cache. With it's own unit tests, and
 3. View Model layer - Observed objects and calls out to api or model as required. Includes it's own unit tests.
 

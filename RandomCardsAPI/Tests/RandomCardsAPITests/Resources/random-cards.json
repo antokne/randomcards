@@ -1,0 +1,72 @@
+[
+  {
+    "id": 2572,
+    "uid": "1436b9b6-adba-474f-bb73-4230f95ccb50",
+    "credit_card_number": "1211-1221-1234-2201",
+    "credit_card_expiry_date": "2027-11-07",
+    "credit_card_type": "maestro"
+  },
+  {
+    "id": 5027,
+    "uid": "905e55d9-eae3-4d9c-b875-f4dde5744fc9",
+    "credit_card_number": "1228-1221-1221-1431",
+    "credit_card_expiry_date": "2026-11-07",
+    "credit_card_type": "american_express"
+  },
+  {
+    "id": 4726,
+    "uid": "b329f0cc-29ea-4185-bd19-d27eb7341b91",
+    "credit_card_number": "1234-2121-1221-1211",
+    "credit_card_expiry_date": "2025-11-07",
+    "credit_card_type": "diners_club"
+  },
+  {
+    "id": 1815,
+    "uid": "1edd6942-335a-4c2d-ae4e-73513a362f6b",
+    "credit_card_number": "1211-1221-1234-2201",
+    "credit_card_expiry_date": "2025-11-07",
+    "credit_card_type": "american_express"
+  },
+  {
+    "id": 9266,
+    "uid": "366c4000-2e92-4726-ac5a-034475464484",
+    "credit_card_number": "1228-1221-1221-1431",
+    "credit_card_expiry_date": "2024-11-07",
+    "credit_card_type": "diners_club"
+  },
+  {
+    "id": 2141,
+    "uid": "a8ed0079-dc98-4ceb-964b-8b3aeabba45a",
+    "credit_card_number": "1211-1221-1234-2201",
+    "credit_card_expiry_date": "2024-11-07",
+    "credit_card_type": "discover"
+  },
+  {
+    "id": 4043,
+    "uid": "cc1f209d-a81f-4753-b00a-aa045030873a",
+    "credit_card_number": "1234-2121-1221-1211",
+    "credit_card_expiry_date": "2024-11-07",
+    "credit_card_type": "dankort"
+  },
+  {
+    "id": 350,
+    "uid": "5c69fda7-4f3c-4c30-a7d6-930c69d5100e",
+    "credit_card_number": "1211-1221-1234-2201",
+    "credit_card_expiry_date": "2025-11-07",
+    "credit_card_type": "american_express"
+  },
+  {
+    "id": 960,
+    "uid": "ca57c2e0-861a-4bcd-a1d0-a808846e1a7c",
+    "credit_card_number": "1211-1221-1234-2201",
+    "credit_card_expiry_date": "2027-11-07",
+    "credit_card_type": "laser"
+  },
+  {
+    "id": 3392,
+    "uid": "3c5c19f7-df8a-4f2f-ab5c-c7293a553f17",
+    "credit_card_number": "1212-1221-1121-1234",
+    "credit_card_expiry_date": "2026-11-07",
+    "credit_card_type": "discover"
+  }
+]
