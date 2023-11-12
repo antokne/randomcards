@@ -9,6 +9,10 @@ import CoreData
 
 public struct PersistenceController {
 	public static let shared = PersistenceController()
+
+	public static var test: PersistenceController = {
+		PersistenceController(inMemory: true)
+	}()
 	
 	public static var preview: PersistenceController = {
 		let result = PersistenceController(inMemory: true)
@@ -31,7 +35,15 @@ public struct PersistenceController {
 	public let container: NSPersistentContainer
 	
 	init(inMemory: Bool = false) {
-		container = NSPersistentContainer(name: "AGRandomCards")
+		
+		guard let modelURL = Bundle.module.url(forResource:"AGRandomCards", withExtension: "momd") else {
+			fatalError("No model file!")
+		}
+		guard let model = NSManagedObjectModel(contentsOf: modelURL) else {
+			fatalError("No Model!")
+		}
+		
+		container = NSPersistentCloudKitContainer(name: "AGRandomCards", managedObjectModel: model)
 		if inMemory {
 			container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
 		}
@@ -52,5 +64,9 @@ public struct PersistenceController {
 			}
 		})
 		container.viewContext.automaticallyMergesChangesFromParent = true
+	}
+	
+	public func save() throws {
+		try container.viewContext.save()
 	}
 }
