@@ -18,7 +18,7 @@ final class RandomCardsAPITests: XCTestCase {
 	
 	func testGetRandomCardsServerError() async throws {
 		
-		var session = MockURLSession()
+		let session = MockURLSession()
 		
 		// Given
 		session.statusCode = 300
@@ -52,13 +52,13 @@ final class RandomCardsAPITests: XCTestCase {
 	
 	func testGetRandomCards() async throws {
 		
-		var session = MockURLSession()
+		let session = MockURLSession()
 		
 		// Given
 		session.statusCode = 200
 		
 		// When
-		var result = try await RandomCardsAPI.getRandomCreditCards(session: session)
+		let result = try await RandomCardsAPI.getRandomCreditCards(session: session)
 		
 		// Then
 		if case .success(let creditCards) = result {
@@ -87,9 +87,7 @@ class MockURLSession: URLSessionProtocol {
 			let data = try XCTUnwrap(Data(contentsOf: jsonURL))
 			return (data, response)
 		}
-
 		return (Data(), response)
-
 	}
 }
 
