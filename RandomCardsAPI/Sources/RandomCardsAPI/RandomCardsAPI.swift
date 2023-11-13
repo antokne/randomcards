@@ -19,6 +19,19 @@ public enum NetworkError: Error {
 			return 0
 		}
 	}
+	
+	public var errorDescription: String {
+		switch self {
+		case .invalidUrl:
+			return "Invalid URL"
+		case .invalidResponse:
+			return "Invalid respoisne"
+		case .serverError(let statusCode):
+			return "Server error \(statusCode)"
+		case .decodingError(let error):
+			return "Failed to decode \(error.localizedDescription)"
+		}
+	}
 }
 
 // Create a session protocol used for testing.
