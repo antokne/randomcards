@@ -15,6 +15,10 @@
 		E4171C102AFB19A9002297F6 /* AGRandomCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4171C0F2AFB19A9002297F6 /* AGRandomCardsUITests.swift */; };
 		E4171C122AFB19A9002297F6 /* AGRandomCardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4171C112AFB19A9002297F6 /* AGRandomCardsUITestsLaunchTests.swift */; };
 		E4171C292AFB1E68002297F6 /* RandomCardsModel in Frameworks */ = {isa = PBXBuildFile; productRef = E4171C282AFB1E68002297F6 /* RandomCardsModel */; };
+		E473D4D92AFC8087002FE036 /* RandomCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E473D4D82AFC8087002FE036 /* RandomCardsView.swift */; };
+		E473D4DB2AFC8098002FE036 /* SavedCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E473D4DA2AFC8098002FE036 /* SavedCardsView.swift */; };
+		E4DD75C62AFDE38A003F67FB /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DD75C52AFDE38A003F67FB /* CreditCardView.swift */; };
+		E4F9935A2AFDB6670099B105 /* RandomCardsViewModel in Frameworks */ = {isa = PBXBuildFile; productRef = E4F993592AFDB6670099B105 /* RandomCardsViewModel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,9 @@
 		E4171C232AFB1CC9002297F6 /* RandomCardsAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RandomCardsAPI; sourceTree = "<group>"; };
 		E4171C252AFB1D08002297F6 /* RandomCardsViewModel */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RandomCardsViewModel; sourceTree = "<group>"; };
 		E4171C262AFB1D22002297F6 /* RandomCardsModel */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RandomCardsModel; sourceTree = "<group>"; };
+		E473D4D82AFC8087002FE036 /* RandomCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCardsView.swift; sourceTree = "<group>"; };
+		E473D4DA2AFC8098002FE036 /* SavedCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCardsView.swift; sourceTree = "<group>"; };
+		E4DD75C52AFDE38A003F67FB /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F9935A2AFDB6670099B105 /* RandomCardsViewModel in Frameworks */,
 				E4171C292AFB1E68002297F6 /* RandomCardsModel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				E4171BEF2AFB19A8002297F6 /* AGRandomCardsApp.swift */,
+				E4DD75C42AFDE375003F67FB /* Views */,
+				E473D4D82AFC8087002FE036 /* RandomCardsView.swift */,
+				E473D4DA2AFC8098002FE036 /* SavedCardsView.swift */,
 				E4171BF12AFB19A8002297F6 /* ContentView.swift */,
 				E4171BF32AFB19A9002297F6 /* Assets.xcassets */,
 				E4171BF52AFB19A9002297F6 /* Preview Content */,
@@ -137,6 +148,14 @@
 			path = AGRandomCardsUITests;
 			sourceTree = "<group>";
 		};
+		E4DD75C42AFDE375003F67FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4DD75C52AFDE38A003F67FB /* CreditCardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,6 +174,7 @@
 			name = AGRandomCards;
 			packageProductDependencies = (
 				E4171C282AFB1E68002297F6 /* RandomCardsModel */,
+				E4F993592AFDB6670099B105 /* RandomCardsViewModel */,
 			);
 			productName = AGRandomCards;
 			productReference = E4171BEC2AFB19A8002297F6 /* AGRandomCards.app */;
@@ -230,6 +250,7 @@
 			mainGroup = E4171BE32AFB19A8002297F6;
 			packageReferences = (
 				E4171C272AFB1E68002297F6 /* XCLocalSwiftPackageReference "RandomCardsModel" */,
+				E4F993582AFDB6670099B105 /* XCLocalSwiftPackageReference "RandomCardsViewModel" */,
 			);
 			productRefGroup = E4171BED2AFB19A8002297F6 /* Products */;
 			projectDirPath = "";
@@ -274,6 +295,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4171BF22AFB19A8002297F6 /* ContentView.swift in Sources */,
+				E473D4D92AFC8087002FE036 /* RandomCardsView.swift in Sources */,
+				E473D4DB2AFC8098002FE036 /* SavedCardsView.swift in Sources */,
+				E4DD75C62AFDE38A003F67FB /* CreditCardView.swift in Sources */,
 				E4171BF02AFB19A8002297F6 /* AGRandomCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,12 +634,20 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = RandomCardsModel;
 		};
+		E4F993582AFDB6670099B105 /* XCLocalSwiftPackageReference "RandomCardsViewModel" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = RandomCardsViewModel;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		E4171C282AFB1E68002297F6 /* RandomCardsModel */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RandomCardsModel;
+		};
+		E4F993592AFDB6670099B105 /* RandomCardsViewModel */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RandomCardsViewModel;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

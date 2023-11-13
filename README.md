@@ -2,7 +2,7 @@
 
 This is a simple project demonstrating connecting to a ramdom cards api and displaying these in SwiftUI views.
 
-The demo is also not using the new Swift macro Observable, nor SwiftData as these are only available in iOS 17 and therefore will not be able to be adopted by westac apps for a numbers of years. 
+The demo is not using the new Swift macro Observable, nor SwiftData as these are only available in iOS 17 and therefore will not be able to be adopted by westac apps for a numbers of years. 
 
 It is however make use of Structured Concurrency, inlcuding async/await and Combine where appropriate.
 
@@ -12,7 +12,7 @@ Features included are:
 
 I have decided to architect this in a way that might be considered for a larger project.
 
-Each layer is it's own package and could be further seperated into separate repositories if desired. For the purposes of this demo all packages are included in the one repo.
+Each layer is it's own package and could be further seperated into repositories if desired. For the purposes of this demo all packages are included in the one repo.
 
 Packages are:
 1. The API layer - calls the random cards api and includes it's unit tests,
