@@ -53,6 +53,15 @@ public extension SavedCreditCard {
 		self.updatedDate = Date()
 		return self
 	}
+	
+	var expiryDateString: String? {
+		let dateFormatter = DateFormatter()
+		dateFormatter.dateFormat = "YYYY-MM-DD"
+		if let expiryDate {
+			return dateFormatter.string(from: expiryDate)
+		}
+		return nil
+	}
 
 	static func findSavedCreditCard(by id: Int64, context: NSManagedObjectContext = PersistenceController.shared.container.viewContext) throws -> SavedCreditCard? {
 		let fetchRequest = NSFetchRequest<SavedCreditCard>(entityName: SavedCreditCard.className)
