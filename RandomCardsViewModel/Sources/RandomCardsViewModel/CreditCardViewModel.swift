@@ -87,7 +87,7 @@ public class CreditCardViewModel: CreditCardProtocol {
 		self.saved = true
 	}
 	
-	/// Check that this card is save or not.
+	/// Check that this card is saved or not.
 	/// Done async and updates saved property if saved.
 	func checkSaved() {
 		Task {
@@ -154,7 +154,7 @@ public class CreditCardViewModel: CreditCardProtocol {
 		self.savedCreditCard = nil
 
 		// Publish delete to anyone that is listening.
-		CreditCardViewModel.cardsDeletedSubject.value = [id]		
+		CreditCardViewModel.cardsDeletedSubject.value = [id]
 	}
 	
 	/// Save the context and toggle the saved state

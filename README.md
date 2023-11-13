@@ -4,7 +4,7 @@ This is a simple project demonstrating connecting to a ramdom cards api and disp
 
 The demo is not using the new Swift macro Observable, nor SwiftData as these are only available in iOS 17 and therefore will not be able to be adopted by westac apps for a numbers of years. 
 
-It is however make use of Structured Concurrency, inlcuding async/await and Combine where appropriate.
+It does however make use of Structured Concurrency, inlcuding async/await and Combine where appropriate.
 
 Features included are:
 1. Sort cards by type, and
